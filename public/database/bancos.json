@@ -105,25 +105,11 @@
         "id": "25 - BCO ALFA S.A."
     },
     {
-        "nome": "BANCO ITAÚ CONSIGNADO S.A.",
-        "cod": 29,
-        "ispb": "33&nbsp;885&nbsp;724",
-        "nome-completo": "Banco Itaú Consignado S.A.",
-        "id": "29 - BANCO ITAÚ CONSIGNADO S.A."
-    },
-    {
         "nome": "BCO SANTANDER (BRASIL) S.A.",
         "cod": 33,
         "ispb": "90&nbsp;400&nbsp;888",
         "nome-completo": "BANCO SANTANDER (BRASIL) S.A.",
         "id": "33 - BCO SANTANDER (BRASIL) S.A."
-    },
-    {
-        "nome": "BCO BBI S.A.",
-        "cod": 36,
-        "ispb": "6&nbsp;271&nbsp;464",
-        "nome-completo": "Banco Bradesco BBI S.A.",
-        "id": "36 - BCO BBI S.A."
     },
     {
         "nome": "BCO DO EST. DO PA S.A.",
@@ -166,13 +152,6 @@
         "ispb": "3&nbsp;012&nbsp;230",
         "nome-completo": "Hipercard Banco Múltiplo S.A.",
         "id": "62 - HIPERCARD BM S.A."
-    },
-    {
-        "nome": "BANCO BRADESCARD",
-        "cod": 63,
-        "ispb": "4&nbsp;184&nbsp;779",
-        "nome-completo": "Banco Bradescard S.A.",
-        "id": "63 - BANCO BRADESCARD"
     },
     {
         "nome": "GOLDMAN SACHS DO BRASIL BM S.A",
@@ -453,13 +432,6 @@
         "id": "121 - BCO AGIBANK S.A."
     },
     {
-        "nome": "BCO BRADESCO BERJ S.A.",
-        "cod": 122,
-        "ispb": "33&nbsp;147&nbsp;315",
-        "nome-completo": "Banco Bradesco BERJ S.A.",
-        "id": "122 - BCO BRADESCO BERJ S.A."
-    },
-    {
         "nome": "BCO WOORI BANK DO BRASIL S.A.",
         "cod": 124,
         "ispb": "15&nbsp;357&nbsp;060",
@@ -660,13 +632,6 @@
         "ispb": "9&nbsp;210&nbsp;106",
         "nome-completo": "SOCRED S.A. - SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E À EMPRESA DE PEQUENO P",
         "id": "183 - SOCRED SA - SCMEPP"
-    },
-    {
-        "nome": "BCO ITAÚ BBA S.A.",
-        "cod": 184,
-        "ispb": "17&nbsp;298&nbsp;092",
-        "nome-completo": "Banco Itaú BBA S.A.",
-        "id": "184 - BCO ITAÚ BBA S.A."
     },
     {
         "nome": "ATIVA S.A. INVESTIMENTOS CCTVM",
@@ -1475,13 +1440,6 @@
         "id": "393 - BCO VOLKSWAGEN S.A"
     },
     {
-        "nome": "BCO BRADESCO FINANC. S.A.",
-        "cod": 394,
-        "ispb": "7&nbsp;207&nbsp;996",
-        "nome-completo": "Banco Bradesco Financiamentos S.A.",
-        "id": "394 - BCO BRADESCO FINANC. S.A."
-    },
-    {
         "nome": "F D GOLD DTVM LTDA",
         "cod": 395,
         "ispb": "8&nbsp;673&nbsp;569",
@@ -1871,13 +1829,6 @@
         "id": "477 - CITIBANK N.A."
     },
     {
-        "nome": "BCO ITAUBANK S.A.",
-        "cod": 479,
-        "ispb": "60&nbsp;394&nbsp;079",
-        "nome-completo": "Banco ItauBank S.A.",
-        "id": "479 - BCO ITAUBANK S.A."
-    },
-    {
         "nome": "DEUTSCHE BANK S.A.BCO ALEMAO",
         "cod": 487,
         "ispb": "62&nbsp;331&nbsp;228",
@@ -2008,13 +1959,6 @@
         "ispb": "62&nbsp;144&nbsp;175",
         "nome-completo": "Banco Pine S.A.",
         "id": "643 - BCO PINE S.A."
-    },
-    {
-        "nome": "ITAÚ UNIBANCO HOLDING S.A.",
-        "cod": 652,
-        "ispb": "60&nbsp;872&nbsp;504",
-        "nome-completo": "Itaú Unibanco Holding S.A.",
-        "id": "652 - ITAÚ UNIBANCO HOLDING S.A."
     },
     {
         "nome": "BANCO VOITER",
