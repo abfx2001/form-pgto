@@ -36,3 +36,11 @@ document.addEventListener('click', e => {
 
 const codCond = document.getElementById('codCond')
 codCond.addEventListener('keyup', buscaCond)
+
+window.addEventListener("keydown", function (event) {
+    if (event.ctrlKey && (event.key === "p" || event.keyCode === 80)) {
+        event.preventDefault();
+        alert("Utilize o botão de imprimir!");
+
+    }
+});
