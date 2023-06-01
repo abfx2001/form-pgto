@@ -21776,6 +21776,13 @@ document.addEventListener('click', function (e) {
 
 var codCond = document.getElementById('codCond');
 codCond.addEventListener('keyup', _modules_buscaCond__WEBPACK_IMPORTED_MODULE_8__["default"]);
+window.addEventListener("keydown", function (event) {
+  if (event.ctrlKey && (event.key === "p" || event.keyCode === 80)) {
+    event.preventDefault(); // Impede o comportamento padrão (impressão)
+    alert("Utilize o Botão de impressão!");
+    // Você pode adicionar aqui qualquer lógica personalizada que desejar
+  }
+});
 })();
 
 /******/ })()
