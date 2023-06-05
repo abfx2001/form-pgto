@@ -11,14 +11,14 @@ function selecTipoPag() {
             chavePix.innerHTML = ''
             chavePix.innerHTML = `
         <td>
-            CHAVE PIX (CPF)
+            CHAVE PIX (CPF/CNPJ)
         </td>
         <td id="tipoChavePix">
             <input
             type="text"
             id="inputCpf"
-            placeholder="Digite o CPF da Chave Pix"
-            maxlength="14"
+            placeholder="Digite o CPF ou CNPJ da Chave Pix"
+            maxlength="18"
             name="pixCPF"
             >
         </td>
@@ -48,6 +48,11 @@ function selecTipoPag() {
                     v = v.replace(/(\d{3})(\d)/, "$1.$2")
                     v = v.replace(/(\d{3})(\d)/, "$1.$2")
                     v = v.replace(/(\d{3})(\d{1,2})$/, "$1-$2")
+                } else {
+                    v = v.replace(/^(\d{2})(\d)/, "$1.$2")
+                    v = v.replace(/^(\d{2})\.(\d{3})(\d)/, "$1.$2.$3")
+                    v = v.replace(/\.(\d{3})(\d)/, ".$1/$2")
+                    v = v.replace(/(\d{4})(\d)/, "$1-$2")
                 }
                 return v
             }

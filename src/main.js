@@ -11,7 +11,9 @@ import autocomplet from './modules/autocomplet'
 import imprimirTela from './modules/imprimiTela'
 import buscaCond from './modules/buscaCond'
 import validacao from './modules/validacao'
+import criaLog from './modules/criaLog'
 
+//criaLog()
 selecTipoPag()
 timeStampNow()
 inputMask()
