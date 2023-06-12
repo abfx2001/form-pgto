@@ -21756,16 +21756,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_timeStamp__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/timeStamp */ "./src/modules/timeStamp.js");
 /* harmony import */ var _modules_inputMask__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/inputMask */ "./src/modules/inputMask.js");
 /* harmony import */ var _modules_autocomplet__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/autocomplet */ "./src/modules/autocomplet.js");
-<<<<<<< HEAD
-/* harmony import */ var _modules_imprimiTela__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/imprimiTela */ "./src/modules/imprimiTela.js");
-/* harmony import */ var _modules_buscaCond__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/buscaCond */ "./src/modules/buscaCond.js");
-/* harmony import */ var _modules_validacao__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/validacao */ "./src/modules/validacao.js");
-/* harmony import */ var _modules_criaLog__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./modules/criaLog */ "./src/modules/criaLog.js");
-/* harmony import */ var _modules_criaLog__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_modules_criaLog__WEBPACK_IMPORTED_MODULE_10__);
-=======
 /* harmony import */ var _modules_buscaCond__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/buscaCond */ "./src/modules/buscaCond.js");
 /* harmony import */ var _modules_validacao__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/validacao */ "./src/modules/validacao.js");
->>>>>>> 4646913c9e443a28e9a246f95e028ae02c3fd740
+/* harmony import */ var _modules_criaLog__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/criaLog */ "./src/modules/criaLog.js");
+/* harmony import */ var _modules_criaLog__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_criaLog__WEBPACK_IMPORTED_MODULE_9__);
 
 
 // para navegadores mais antigos...
@@ -21803,11 +21797,7 @@ document.addEventListener('click', function (e) {
 });
 
 var codCond = document.getElementById('codCond');
-<<<<<<< HEAD
-codCond.addEventListener('keyup', _modules_buscaCond__WEBPACK_IMPORTED_MODULE_8__["default"]);
-=======
 codCond.addEventListener('keyup', _modules_buscaCond__WEBPACK_IMPORTED_MODULE_7__["default"]);
->>>>>>> 4646913c9e443a28e9a246f95e028ae02c3fd740
 window.addEventListener("keydown", function (event) {
   if (event.ctrlKey && (event.key === "p" || event.keyCode === 80)) {
     event.preventDefault();
