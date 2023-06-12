@@ -151,8 +151,11 @@ function imprimirTela() {
     document.getElementById('btn1').style.display = 'none';
     document.getElementById('btn2').style.display = 'none';
     window.print();
-    window.location.reload();
+    document.getElementById('btn1').style.display = 'block';
+    document.getElementById('btn2').style.display = 'block';
+    //window.location.reload()
   }
+
   return;
 }
 
@@ -21738,9 +21741,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_timeStamp__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/timeStamp */ "./src/modules/timeStamp.js");
 /* harmony import */ var _modules_inputMask__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/inputMask */ "./src/modules/inputMask.js");
 /* harmony import */ var _modules_autocomplet__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/autocomplet */ "./src/modules/autocomplet.js");
-/* harmony import */ var _modules_imprimiTela__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/imprimiTela */ "./src/modules/imprimiTela.js");
-/* harmony import */ var _modules_buscaCond__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/buscaCond */ "./src/modules/buscaCond.js");
-/* harmony import */ var _modules_validacao__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/validacao */ "./src/modules/validacao.js");
+/* harmony import */ var _modules_buscaCond__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/buscaCond */ "./src/modules/buscaCond.js");
+/* harmony import */ var _modules_validacao__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/validacao */ "./src/modules/validacao.js");
 
 
 // para navegadores mais antigos...
@@ -21750,7 +21752,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
+//import imprimirTela from './modules/imprimiTela'
 
 
 (0,_modules_seletorPix__WEBPACK_IMPORTED_MODULE_3__["default"])();
@@ -21769,13 +21771,19 @@ document.addEventListener('click', function (e) {
     e.preventDefault();
     var formData = new FormData(formEl);
     var data = Object.fromEntries(formData);
-    (0,_modules_validacao__WEBPACK_IMPORTED_MODULE_9__["default"])(data);
+    (0,_modules_validacao__WEBPACK_IMPORTED_MODULE_8__["default"])(data);
     //imprimirTela()
   }
 });
 
 var codCond = document.getElementById('codCond');
-codCond.addEventListener('keyup', _modules_buscaCond__WEBPACK_IMPORTED_MODULE_8__["default"]);
+codCond.addEventListener('keyup', _modules_buscaCond__WEBPACK_IMPORTED_MODULE_7__["default"]);
+window.addEventListener("keydown", function (event) {
+  if (event.ctrlKey && (event.key === "p" || event.keyCode === 80)) {
+    event.preventDefault();
+    alert("Utilize o botão de imprimir!");
+  }
+});
 })();
 
 /******/ })()

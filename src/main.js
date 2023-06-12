@@ -8,7 +8,7 @@ import selecTipoPag from './modules/seletorPix'
 import timeStampNow from './modules/timeStamp'
 import inputMask from './modules/inputMask'
 import autocomplet from './modules/autocomplet'
-import imprimirTela from './modules/imprimiTela'
+//import imprimirTela from './modules/imprimiTela'
 import buscaCond from './modules/buscaCond'
 import validacao from './modules/validacao'
 
