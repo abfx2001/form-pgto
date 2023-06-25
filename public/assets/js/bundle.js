@@ -230,6 +230,41 @@ function inputMask() {
 
 /***/ }),
 
+/***/ "./src/modules/predefinicoes.js":
+/*!**************************************!*\
+  !*** ./src/modules/predefinicoes.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ predefinicao)
+/* harmony export */ });
+function predefinicao(data) {
+  var getLocalStorage = function getLocalStorage() {
+    var _JSON$parse;
+    return (_JSON$parse = JSON.parse(localStorage.getItem("db_predef"))) !== null && _JSON$parse !== void 0 ? _JSON$parse : [];
+  };
+  var setLocalStorage = function setLocalStorage(dbPrefef) {
+    return localStorage.setItem("db_predef", JSON.stringify(dbPrefef));
+  };
+  var user = data.nomeGerente;
+  var dbinfo = new Object();
+  dbinfo.id = 1;
+  dbinfo.user = user;
+  dbinfo.data = data;
+  setNewData(dbinfo);
+  function setNewData(dbinfo) {
+    var newData = getLocalStorage();
+    newData += JSON.stringify(dbinfo);
+    setLocalStorage(newData);
+  }
+  console.log(getLocalStorage());
+}
+
+/***/ }),
+
 /***/ "./src/modules/seletorPix.js":
 /*!***********************************!*\
   !*** ./src/modules/seletorPix.js ***!
@@ -21743,6 +21778,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_autocomplet__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/autocomplet */ "./src/modules/autocomplet.js");
 /* harmony import */ var _modules_buscaCond__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/buscaCond */ "./src/modules/buscaCond.js");
 /* harmony import */ var _modules_validacao__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/validacao */ "./src/modules/validacao.js");
+/* harmony import */ var _modules_predefinicoes__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/predefinicoes */ "./src/modules/predefinicoes.js");
 
 
 // para navegadores mais antigos...
@@ -21755,29 +21791,33 @@ __webpack_require__.r(__webpack_exports__);
 //import imprimirTela from './modules/imprimiTela'
 
 
+
 (0,_modules_seletorPix__WEBPACK_IMPORTED_MODULE_3__["default"])();
 (0,_modules_timeStamp__WEBPACK_IMPORTED_MODULE_4__["default"])();
 (0,_modules_inputMask__WEBPACK_IMPORTED_MODULE_5__["default"])();
 (0,_modules_autocomplet__WEBPACK_IMPORTED_MODULE_6__["default"])();
-var formEl = document.getElementById('form-pgto');
-document.addEventListener('click', function (e) {
+//predefinicao();
+
+var formEl = document.getElementById("form-pgto");
+document.addEventListener("click", function (e) {
   var el = e.target;
   var nomeClass = el.className.toLowerCase();
-  if (nomeClass === 'limpar btn-form') {
+  if (nomeClass === "limpar btn-form") {
     e.preventDefault();
     window.location.reload();
   }
-  if (nomeClass === 'imprimir btn-form') {
+  if (nomeClass === "imprimir btn-form") {
     e.preventDefault();
     var formData = new FormData(formEl);
     var data = Object.fromEntries(formData);
     (0,_modules_validacao__WEBPACK_IMPORTED_MODULE_8__["default"])(data);
+    (0,_modules_predefinicoes__WEBPACK_IMPORTED_MODULE_9__["default"])(data);
     //imprimirTela()
   }
 });
 
-var codCond = document.getElementById('codCond');
-codCond.addEventListener('keyup', _modules_buscaCond__WEBPACK_IMPORTED_MODULE_7__["default"]);
+var codCond = document.getElementById("codCond");
+codCond.addEventListener("keyup", _modules_buscaCond__WEBPACK_IMPORTED_MODULE_7__["default"]);
 window.addEventListener("keydown", function (event) {
   if (event.ctrlKey && (event.key === "p" || event.keyCode === 80)) {
     event.preventDefault();
