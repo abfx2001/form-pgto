@@ -1,49 +1,49 @@
 .container {
-    width: 745px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 745px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .inline {
-    display: flex;
-    margin-bottom: 10px;
-    font-size: 19px;
-    padding-left: 8px;
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 19px;
+  padding-left: 8px;
 }
 
 .primaryColor {
-    background: cornflowerblue;
+  background: cornflowerblue;
 }
 
 .inputMenor {
-    width: 184px;
+  width: 184px;
 }
 
 h1 {
-    padding-left: 16px;
+  padding-left: 16px;
 }
 
 input {
-    text-align: center;
-    width: 300px;
+  text-align: center;
+  width: 300px;
 }
 
 table,
 th,
 td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    text-align: center;
-    margin: 0px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  margin: 0px;
 }
 
 th,
 td {
-    padding: 5px 10px;
+  padding: 5px 10px;
 }
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 textarea,
@@ -52,98 +52,117 @@ input,
 textarea:focus,
 input:focus,
 select:focus {
-    box-shadow: 0 0 0 0;
-    border: 0 none;
-    outline: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    text-transform: uppercase;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
 }
 
 select {
-    text-align: center;
+  text-align: center;
 }
 
 .selectStart {
-    text-align: start;
+  text-align: start;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 button:hover {
-    background: rgb(55, 86, 143);
+  background: rgb(55, 86, 143);
 }
 
+.delpredef,
+.newpredef,
 .imprimir,
 .limpar {
-    background: cornflowerblue;
-    color: white;
-    font-size: large;
-    border-radius: 5px;
-    align-items: center;
-    padding: 10px 30px 10px 30px;
-    margin-bottom: 25px;
-    cursor: pointer;
+  background: cornflowerblue;
+  color: white;
+  font-size: large;
+  border-radius: 5px;
+  align-items: center;
+  padding: 10px 30px 10px 30px;
+  margin-bottom: 25px;
+  cursor: pointer;
 }
 
 .imprimir:hover {
-    background: rgb(55, 86, 143);
+  background: rgb(55, 86, 143);
+}
+
+.preDef:hover {
+  background: rgb(55, 86, 143);
 }
 
 .limpar:hover {
-    background: rgb(55, 86, 143);
+  background: rgb(55, 86, 143);
 }
 
 .container2 {
-    width: 300px;
-    padding-right: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
 
+.container3 {
+  display: flex;
+  justify-content: center;
 }
 
 .autocompleteList {
-    background: white;
-    list-style: none;
-    padding: unset;
-    margin: unset;
-    position: absolute;
-    width: 100%;
-    max-height: 200px;
-    overflow-y: auto;
+  background: white;
+  list-style: none;
+  padding: unset;
+  margin: unset;
+  position: absolute;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
 }
 
 .autocompleteList button {
-    border: unset;
-    background: unset;
-    display: block;
-    width: 100%;
-    text-align: left;
-    padding: 0.5em;
+  border: unset;
+  background: unset;
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.5em;
 }
 
 .autocompleteList li {
-    border: 1px solid rgb(198, 198, 198);
-    border-top: unset;
+  border: 1px solid rgb(198, 198, 198);
+  border-top: unset;
 }
 
 .autocompleteList li:hover {
-    background: rgb(219, 218, 218);
+  background: rgb(219, 218, 218);
 }
 
 .autocompleteWrapper {
-    display: inline-block;
-    position: relative;
+  display: inline-block;
+  position: relative;
 }
 
 .errosTd {
-    border: 3px solid red;
+  border: 3px solid red;
 }
 
 .msgErro {
-    display: none;
+  display: none;
+}
+
+.slecModelo {
+  height: 45px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgba(143, 170, 219, 0.842);
+}
+.slecModelo:focus {
+  border: 2px solid black;
 }

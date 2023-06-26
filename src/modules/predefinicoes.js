@@ -6,18 +6,38 @@ export default function predefinicao(data) {
 
   const user = data.nomeGerente;
 
-  var dbinfo = new Object();
-  dbinfo.id = 1;
-  dbinfo.user = user;
-  dbinfo.data = data;
+  function lastId() {
+    let currentId = getLocalStorage().length;
+    getLocalStorage().map((e) => {
+      if (e.id > currentId) {
+        currentId = e.id;
+      }
+    });
+    return currentId + 1;
+  }
+
+  const nomeModelo = window.prompt("Dê um nome ao Modelo:", lastId());
+
+  const dbinfo = {
+    nomeModelo: nomeModelo,
+    id: lastId(),
+    user: user,
+    data: data,
+  };
 
   setNewData(dbinfo);
 
   function setNewData(dbinfo) {
-    let newData = getLocalStorage();
-    newData += JSON.stringify(dbinfo);
-    setLocalStorage(newData);
+    const newDbinfo = getLocalStorage();
+    newDbinfo.push(dbinfo);
+    setLocalStorage(newDbinfo);
   }
 
-  console.log(getLocalStorage());
+  var modelosList = document.getElementById("modelosList");
+  modelosList.innerHTML = `<option value=""> ------------------------- </option>`;
+  getLocalStorage().map((e) => {
+    modelosList.innerHTML += `
+    <option value="${e.id}">${e.nomeModelo}</option>
+    `;
+  });
 }

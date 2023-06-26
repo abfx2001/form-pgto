@@ -29,14 +29,14 @@
                 placeholder="..."
               >
             </td>
-            <td id="cond">-</td>
+            <td id="cond" name="cond">-</td>
           </tr>
           <tr>
             <td colspan="2" class="primaryColor"></td>
           </tr>
           <tr>
             <td>CNPJ</td>
-            <td id="condCNPJ">-</td>
+            <td id="condCNPJ" name="condCNPJ">-</td>
           </tr>
           <tr>
             <td>DATA PARA PAGAMENTO</td>
@@ -67,7 +67,7 @@
           <tr>
             <td>FORMA DE PAGAMENTO</td>
             <td>
-              <select id="formaDePagamento">
+              <select id="formaDePagamento" name="formaDePagamento">
                 <option value="transBanc">TRANSFERÊNCIA BANCÁRIA</option>
                 <option value="pixCpf">PIX CHAVE(CPF/CNPJ)</option>
                 <option value="pixEmail">PIX CHAVE(Email)</option>
@@ -133,7 +133,7 @@
           </tr>
           <tr>
             <td>
-              <select id="tipoConta">
+              <select id="tipoConta" name="tipoConta">
                 <option value="corrente">CONTA CORRENTE</option>
                 <option value="poupanca">CONTA POUPANÇA</option>
               </select>
@@ -148,7 +148,7 @@
           <tr>
             <td>CONTA CONTÁBIL</td>
             <td>
-              <select id="tipoContabil" class="selectStart">
+              <select id="tipoContabil" class="selectStart" name="tipoContabil">
                 <option value="01">01 - ORDINÁRIA</option>
                 <option value="02">02 - FUNDO DE RESERVA</option>
                 <option value="03">03 - PROVISAO TRABALHISTA</option>
@@ -277,7 +277,7 @@
           <tr>
             <td>ANEXOS:</td>
             <td>
-              <select id="tipoAnexo">
+              <select id="tipoAnexo" name="tipoAnexo">
                 <option value="recibo">1 - RECIBO</option>
                 <option value="notaFiscal">2 - NOTA FISCAL</option>
               </select>
@@ -299,6 +299,13 @@
     <div class="container2">
       <button type="submit" class="imprimir btn-form" id="btn1">Imprimir</button>
       <button type="submit" class="limpar btn-form" id="btn2">Limpar</button>
+    </div>
+    <div class="container3">
+      <button type="submit" class="newpredef btn-form" id="btn3">Salvar novo Modelo</button>
+      <select id="modelosList" class="slecModelo rounded">
+        <option value=""> ----------- </option>
+      </select>
+      <button type="submit" class="delpredef btn-form" id="btn4">Excluir Modelo</button>
     </div>
     <script src="./assets/js/bundle.js"></script>
   </body>

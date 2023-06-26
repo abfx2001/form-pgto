@@ -12,12 +12,18 @@ import autocomplet from "./modules/autocomplet";
 import buscaCond from "./modules/buscaCond";
 import validacao from "./modules/validacao";
 import predefinicao from "./modules/predefinicoes";
+import removePredef from "./modules/removePredef";
+import loadModelo from "./modules/loadModelo";
 
 selecTipoPag();
 timeStampNow();
 inputMask();
 autocomplet();
-//predefinicao();
+
+const modeloSelect = document.getElementById("modelosList");
+modeloSelect.addEventListener("change", function () {
+  loadModelo();
+});
 
 const formEl = document.getElementById("form-pgto");
 
@@ -33,8 +39,17 @@ document.addEventListener("click", (e) => {
     const formData = new FormData(formEl);
     const data = Object.fromEntries(formData);
     validacao(data);
+  }
+  if (nomeClass === "newpredef btn-form") {
+    e.preventDefault();
+    const formData = new FormData(formEl);
+    const data = Object.fromEntries(formData);
     predefinicao(data);
-    //imprimirTela()
+  }
+  if (nomeClass === "delpredef btn-form") {
+    e.preventDefault();
+    const id = document.getElementById("modelosList").value;
+    removePredef(id);
   }
 });
 
@@ -46,4 +61,14 @@ window.addEventListener("keydown", function (event) {
     event.preventDefault();
     alert("Utilize o botão de imprimir!");
   }
+});
+
+const getLocalStorage = () =>
+  JSON.parse(localStorage.getItem("db_predef")) ?? [];
+var modelosList = document.getElementById("modelosList");
+modelosList.innerHTML = `<option value=""> ------------------------- </option>`;
+getLocalStorage().map((e) => {
+  modelosList.innerHTML += `
+    <option value="${e.id}">${e.nomeModelo}</option>
+    `;
 });
