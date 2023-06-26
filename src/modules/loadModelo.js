@@ -11,6 +11,10 @@ export default function loadModelo() {
   getLocalStorage().map((e) => {
     if (e.id == modeloSelect) {
       console.log(e.data.formaDePagamento);
+      if (e.data.formaDePagamento == "transBanc"){
+        chavePix.innerHTML = ''
+        linhaPix.innerHTML = ''
+      }
       if (e.data.formaDePagamento == "pixCpf") {
         chavePix.innerHTML = "";
         chavePix.innerHTML = `
