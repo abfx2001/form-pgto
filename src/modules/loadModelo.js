@@ -11,9 +11,9 @@ export default function loadModelo() {
   getLocalStorage().map((e) => {
     if (e.id == modeloSelect) {
       console.log(e.data.formaDePagamento);
-      if (e.data.formaDePagamento == "transBanc"){
-        chavePix.innerHTML = ''
-        linhaPix.innerHTML = ''
+      if (e.data.formaDePagamento == "transBanc") {
+        chavePix.innerHTML = "";
+        linhaPix.innerHTML = "";
       }
       if (e.data.formaDePagamento == "pixCpf") {
         chavePix.innerHTML = "";
@@ -84,6 +84,23 @@ export default function loadModelo() {
         </tr>
         `;
         document.querySelector("[name='pixTel']").value = e.data.pixTel;
+      }
+      if (e.data.formaDePagamento === "pixAle") {
+        chavePix.innerHTML = "";
+        chavePix.innerHTML = `
+            <td>
+                CHAVE PIX (CHAVE ALEATÓRIA)
+            </td>
+            <td id="tipoChavePix">
+              <textarea id="inputAle" cols="46" rows="6" name="pixAle" placeholder="Digite o código da Chave Pix"></textarea>
+            </td>
+            `;
+        linhaPix.innerHTML = `
+            <tr id="linhaPix">
+              <td colspan="2" class="primaryColor"></td>
+            </tr>
+            `;
+        document.querySelector("[name='pixAle']").value = e.data.pixAle;
       }
 
       document.querySelector("[name='agenciaBnc']").value = e.data.agenciaBnc;
