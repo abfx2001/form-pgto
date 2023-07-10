@@ -1153,5 +1153,25 @@
         "cod": 393,
         "condominio": "CONDOMINIO EDIFICIO SOLAR DO PACAEMBU",
         "cnpj": "59.842.948\/0001-37"
+    },
+    {
+        "cod": 394,
+        "condominio": "CONDOMINIO CONJ.RESIDENCIAL CAMPO BELO",
+        "cnpj": "59.937.052\/0001-31"
+    },
+    {
+        "cod": 395,
+        "condominio": "CONDOMINIO EDIFICIO BRASILIA",
+        "cnpj": "54.456.991\/0001-40"
+    },
+    {
+        "cod": 396,
+        "condominio": "CONDOMINIO EDIFICIO VILLE BAYARD",
+        "cnpj": "01.137.523\/0001-47"
+    },
+    {
+        "cod": 397,
+        "condominio": "COND.EDIF.WANDERLEY M. ALEGRE PERDIZES",
+        "cnpj": "54.573.514\/0001-65"
     }
 ]

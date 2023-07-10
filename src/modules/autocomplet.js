@@ -1,65 +1,65 @@
 export default function autocoplet() {
+  const inputEl = document.querySelector("#autocompleteInput");
 
-    const inputEl = document.querySelector('#autocompleteInput');
+  inputEl.addEventListener("input", onInputChange);
 
-    inputEl.addEventListener('input', onInputChange);
+  testeArray();
 
-    testeArray();
+  let idBancos = [];
 
-    let idBancos = [];
+  async function testeArray() {
+    const res = await fetch("/database/bancos.json");
+    const data = await res.json();
 
-    async function testeArray() {
-        const res = await fetch("/database/bancos.json");
-        const data = await res.json();
+    idBancos = data.map((bancos) => {
+      return bancos.id;
+    });
+  }
 
+  function onInputChange() {
+    removeAutocompleteDropdown();
 
-        idBancos = data.map((bancos) => {
-            return bancos.id;
-        });
-    }
+    const value = inputEl.value.toLowerCase();
 
-    function onInputChange() {
-        removeAutocompleteDropdown();
+    if (value.length === 0) return;
 
-        const value = inputEl.value.toLowerCase();
+    let bancosFiltrados = [];
 
-        if (value.length === 0) return;
+    bancosFiltrados = idBancos.filter((x) =>
+      x.toLowerCase().includes(value.toLowerCase())
+    );
 
-        let bancosFiltrados = [];
+    createAutocompleteDropdown(bancosFiltrados);
+  }
 
-        bancosFiltrados = idBancos.filter((x) => x.toLowerCase().includes(value.toLowerCase()))
+  function createAutocompleteDropdown(list) {
+    const listEl = document.createElement("ul");
+    listEl.className = "autocompleteList";
+    listEl.id = "autocompleteList";
 
-        createAutocompleteDropdown(bancosFiltrados)
-    }
+    list.forEach((banco) => {
+      const listItem = document.createElement("li");
+      const bancoBotao = document.createElement("button");
+      bancoBotao.innerHTML = banco;
+      bancoBotao.addEventListener("click", onBancoBotaoClick);
+      listItem.appendChild(bancoBotao);
+      listEl.appendChild(listItem);
+    });
 
-    function createAutocompleteDropdown(list) {
-        const listEl = document.createElement("ul");
-        listEl.className = "autocompleteList";
-        listEl.id = "autocompleteList";
+    document.querySelector("#autocompleteWrapper").appendChild(listEl);
+  }
 
-        list.forEach((banco) => {
-            const listItem = document.createElement("li");
-            const bancoBotao = document.createElement("button");
-            bancoBotao.innerHTML = banco;
-            bancoBotao.addEventListener('click', onBancoBotaoClick);
-            listItem.appendChild(bancoBotao);
-            listEl.appendChild(listItem);
-        });
+  function removeAutocompleteDropdown() {
+    const listEl = document.querySelector("#autocompleteList");
+    if (listEl) listEl.remove();
+  }
 
-        document.querySelector("#autocompleteWrapper").appendChild(listEl);
-    }
+  function onBancoBotaoClick(e) {
+    e.preventDefault();
 
-    function removeAutocompleteDropdown() {
-        const listEl = document.querySelector("#autocompleteList");
-        if (listEl) listEl.remove();
-    }
+    const buttonEl = e.target;
+    inputEl.value = buttonEl.innerHTML;
 
-    function onBancoBotaoClick(e) {
-        e.preventDefault();
-
-        const buttonEl = e.target;
-        inputEl.value = buttonEl.innerHTML;
-
-        removeAutocompleteDropdown();
-    }
+    removeAutocompleteDropdown();
+  }
 }
