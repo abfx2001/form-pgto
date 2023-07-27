@@ -13,22 +13,17 @@ app.get("/", function (req, res) {
 });
 
 app.post("/g", (req, res) => {
-  console.log(JSON.stringify(req.body));
   let browser;
+  const data = req.body;
   (async () => {
-    const data = req.body;
     browser = await puppeteer.launch();
     const [page] = await browser.pages();
     const html = await ejs.renderFile("./src/includes/transBanc.ejs", {
-      codCond: "teste", //data,
+      codCond: data.codCond,
     });
     await page.setContent(html);
     const pdf = await page.pdf({ format: "A4" });
     res.contentType("application/pdf");
-
-    // // optionally:
-    // res.setHeader("Content-Disposition", "attachment; filename=teste1.pdf");
-
     res.send(pdf);
   })()
     .catch((err) => {
