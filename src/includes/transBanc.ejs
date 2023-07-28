@@ -20,7 +20,14 @@
         text-align: center;
       }
       .primaryColor {
-        background: cornflowerblue;
+       /* background: cornflowerblue;*/
+        padding: 0px;
+      }
+      .imgFundo {
+        width: 100%;
+        height: 20px;
+        margin: -5px;
+        border: 1px solid black;
       }
       h1 {
         padding-left: 10px;
@@ -61,7 +68,7 @@
             </td>
           </tr>
           <tr>
-            <td colspan="2" class="primaryColor"></td>
+            <td colspan="2" class="primaryColor"><img src="https://htmlcolorcodes.com/assets/images/colors/cornflower-blue-color-solid-background-1920x1080.png" class="imgFundo"></td>
           </tr>
           <tr>
             <td>CNPJ</td>
@@ -72,84 +79,81 @@
           <tr>
             <td>DATA PARA PAGAMENTO</td>
             <td>
-              <span>Data do pagm.</span>
+              <span><%= dataPag %></span>
             </td>
           </tr>
           <tr>
-            <td colspan="2" class="primaryColor"></td>
+            <td colspan="2" class="primaryColor"><img src="https://htmlcolorcodes.com/assets/images/colors/cornflower-blue-color-solid-background-1920x1080.png" class="imgFundo"></td>
           </tr>
           <tr>
             <td>VALOR</td>
             <td>
-              R$: <span>300,00</span>
+              R$: <span><%= valorPag %></span>
             </td>
           </tr>
           <tr>
-            <td colspan="2" class="primaryColor"></td>
+            <td colspan="2" class="primaryColor"><img src="https://htmlcolorcodes.com/assets/images/colors/cornflower-blue-color-solid-background-1920x1080.png" class="imgFundo"></td>
           </tr>
           <tr>
             <td>FORMA DE PAGAMENTO</td>
             <td>
-              <span>Forma de pagamento</span>
+              <span><%= formaDePagamento %></span>
             </td>
           </tr>
           <tr>
-            <td colspan="2" class="primaryColor"></td>
+            <td colspan="2" class="primaryColor"><img src="https://htmlcolorcodes.com/assets/images/colors/cornflower-blue-color-solid-background-1920x1080.png" class="imgFundo"></td>
           </tr>
           <tr>
             <td>FAVORECIDO</td>
             <td>
-              <span>nome do favorecido nome gigantesco muito grande</span>
+              <span><%= nomeFavorecido %></span>
             </td>
           </tr>
           <tr>
-            <td colspan="2" class="primaryColor"></td>
+            <td colspan="2" class="primaryColor"><img src="https://htmlcolorcodes.com/assets/images/colors/cornflower-blue-color-solid-background-1920x1080.png" class="imgFundo"></td>
           </tr>
           <tr>
             <td>CPF/CNPJ</td>
             <td>
-              <span>333.333.333-44</span>
+              <span><%= cpfCnpjFavorecido %></span>
             </td>
           </tr>
           <tr>
-            <td colspan="2" class="primaryColor"></td>
+            <td colspan="2" class="primaryColor"><img src="https://htmlcolorcodes.com/assets/images/colors/cornflower-blue-color-solid-background-1920x1080.png" class="imgFundo"></td>
           </tr>
-          <!-- arruma diante do modelo ecolhido-->
-          <tr id="chavePix"></tr>
-          <tr id="linhaPix"></tr>
           <tr>
             <td>BANCO</td>
             <td>
-              <span>nome do banco</span>
+              <span><%= nomeBanco %></span>
             </td>
           </tr>
           <tr>
-            <td colspan="2" class="primaryColor"></td>
+            <td colspan="2" class="primaryColor"><img src="https://htmlcolorcodes.com/assets/images/colors/cornflower-blue-color-solid-background-1920x1080.png" class="imgFundo"></td>
           </tr>
           <tr>
             <td>AGÊNCIA</td>
             <td>
-              <span>Agencia</span>
+              <span><%= agenciaBnc %></span>
             </td>
           </tr>
           <tr>
-            <td colspan="2" class="primaryColor"></td>
+            <td colspan="2" class="primaryColor"><img src="https://htmlcolorcodes.com/assets/images/colors/cornflower-blue-color-solid-background-1920x1080.png" class="imgFundo"></td>
           </tr>
           <tr>
             <td>
-              <span>Tipo de conta</span>
+              <span style="text-transform: uppercase;"><%= tipoConta %></span>
             </td>
             <td>
-              <span>Conta</span>
+              <span><%= contaBnc %></span>
             </td>
           </tr>
           <tr>
-            <td colspan="2" class="primaryColor"></td>
+            <td colspan="2" class="primaryColor"><img src="https://htmlcolorcodes.com/assets/images/colors/cornflower-blue-color-solid-background-1920x1080.png" class="imgFundo"></td>
           </tr>
           <tr>
             <td>CONTA CONTÁBIL</td>
             <td>
-              <span>Conta Contábil</span>
+              <span><%= tipoContabil %></span>
             </td>
           </tr>
           <tr>
@@ -159,25 +163,25 @@
             </td>
           </tr>
           <tr>
-            <td colspan="2" class="primaryColor"></td>
+            <td colspan="2" class="primaryColor"><img src="https://htmlcolorcodes.com/assets/images/colors/cornflower-blue-color-solid-background-1920x1080.png" class="imgFundo"></td>
           </tr>
           <tr>
             <td>ASSINATURA GERENTE</td>
             <td>
-              <span>Gerente</span>
+              <span><%= nomeGerente %></span>
             </td>
           </tr>
           <tr>
-            <td colspan="2" class="primaryColor"></td>
+            <td colspan="2" class="primaryColor"><img src="https://htmlcolorcodes.com/assets/images/colors/cornflower-blue-color-solid-background-1920x1080.png" class="imgFundo"></td>
           </tr>
           <tr>
             <td>ANEXOS:</td>
             <td>
-              <span>tipo de enexo</span>
+              <span><%= tipoAnexo %></span>
             </td>
           </td>
           <tr>
-            <td colspan="2" class="primaryColor"></td>
+            <td colspan="2" class="primaryColor"><img src="https://htmlcolorcodes.com/assets/images/colors/cornflower-blue-color-solid-background-1920x1080.png" class="imgFundo"></td>
           </tr>
           <tr>
             <td style="padding-bottom:80px;">HISTÓRICO:</td>

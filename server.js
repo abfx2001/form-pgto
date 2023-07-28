@@ -19,7 +19,20 @@ app.post("/g", (req, res) => {
     browser = await puppeteer.launch();
     const [page] = await browser.pages();
     const html = await ejs.renderFile("./src/includes/transBanc.ejs", {
+      agenciaBnc: data.agenciaBnc,
       codCond: data.codCond,
+      contaBnc: data.contaBnc,
+      cpfCnpjFavorecido: data.cpfCnpjFavorecido,
+      dataPag: data.dataPag,
+      formaDePagamento: data.formaDePagamento,
+      nomeBanco: data.nomeBanco,
+      nomeFavorecido: data.nomeFavorecido,
+      nomeGerente: data.nomeGerente,
+      pixCPF: data.pixCPF,
+      tipoAnexo: data.tipoAnexo,
+      tipoConta: data.tipoConta,
+      tipoContabil: data.tipoContabil,
+      valorPag: data.valorPag,
     });
     await page.setContent(html);
     const pdf = await page.pdf({ format: "A4" });
