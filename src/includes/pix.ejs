@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORMULÁRIO DE PAGAMENTO</title>
     <style type="text/css">
+      .historicotext {
+        text-transform: none !important;
+        word-break: break-all;
+        size: 6px;
+      }
       .container {
       margin-top: 30px;
       margin-left: 140px;
@@ -20,7 +25,14 @@
         text-align: center;
       }
       .primaryColor {
-        background: cornflowerblue;
+       /* background: cornflowerblue;*/
+        padding: 0px;
+      }
+      .imgFundo {
+        width: 100%;
+        height: 20px;
+        margin: -5px;
+        border: 1px solid black;
       }
       h1 {
         padding-left: 10px;
@@ -54,143 +66,141 @@
           </tr>
           <tr>
             <td>
-              <span>133</span>
+              <span><%= codCond %></span>
             </td>
             <td>
-              <span>nome do cond.</span>
+              <span><%= nomeCond %></span>
             </td>
           </tr>
           <tr>
-            <td colspan="2" class="primaryColor"></td>
+            <td colspan="2" class="primaryColor"><img src="https://htmlcolorcodes.com/assets/images/colors/cornflower-blue-color-solid-background-1920x1080.png" class="imgFundo"></td>
           </tr>
           <tr>
             <td>CNPJ</td>
             <td>
-              <span>CNPJ do cond.</span>
+              <span><%= cnpjCond %></span>
             </td>
           </tr>
           <tr>
             <td>DATA PARA PAGAMENTO</td>
             <td>
-              <span>Data do pagm.</span>
+              <span><%= dataPag %></span>
             </td>
           </tr>
           <tr>
-            <td colspan="2" class="primaryColor"></td>
+            <td colspan="2" class="primaryColor"><img src="https://htmlcolorcodes.com/assets/images/colors/cornflower-blue-color-solid-background-1920x1080.png" class="imgFundo"></td>
           </tr>
           <tr>
             <td>VALOR</td>
             <td>
-              R$: <span>300,00</span>
+              R$: <span><%= valorPag %></span>
             </td>
           </tr>
           <tr>
-            <td colspan="2" class="primaryColor"></td>
+            <td colspan="2" class="primaryColor"><img src="https://htmlcolorcodes.com/assets/images/colors/cornflower-blue-color-solid-background-1920x1080.png" class="imgFundo"></td>
           </tr>
           <tr>
             <td>FORMA DE PAGAMENTO</td>
             <td>
-              <span>Forma de pagamento</span>
+              <span><%= formaDePagamento %></span>
             </td>
           </tr>
           <tr>
-            <td colspan="2" class="primaryColor"></td>
+            <td colspan="2" class="primaryColor"><img src="https://htmlcolorcodes.com/assets/images/colors/cornflower-blue-color-solid-background-1920x1080.png" class="imgFundo"></td>
           </tr>
           <tr>
             <td>FAVORECIDO</td>
             <td>
-              <span>nome do favorecido nome gigantesco muito grande</span>
+              <span style="text-transform: uppercase"><%= nomeFavorecido %></span>
             </td>
           </tr>
           <tr>
-            <td colspan="2" class="primaryColor"></td>
+            <td colspan="2" class="primaryColor"><img src="https://htmlcolorcodes.com/assets/images/colors/cornflower-blue-color-solid-background-1920x1080.png" class="imgFundo"></td>
           </tr>
           <tr>
             <td>CPF/CNPJ</td>
             <td>
-              <span>333.333.333-44</span>
+              <span><%= cpfCnpjFavorecido %></span>
             </td>
           </tr>
           <tr>
-            <td colspan="2" class="primaryColor"></td>
+            <td colspan="2" class="primaryColor"><img src="https://htmlcolorcodes.com/assets/images/colors/cornflower-blue-color-solid-background-1920x1080.png" class="imgFundo"></td>
           </tr>
           <tr>
+            <td><%= tipoChavePix %></td>
             <td>
-              <span>tipo da chave</span>
-            </td>
-            <td>
-              <span>chave pix</span>
+              <span style="word-break: break-all;"><%= valorPix %></span>
             </td>
           </tr>
           <tr>
-            <td colspan="2" class="primaryColor"></td>
+            <td colspan="2" class="primaryColor"><img src="https://htmlcolorcodes.com/assets/images/colors/cornflower-blue-color-solid-background-1920x1080.png" class="imgFundo"></td>
           </tr>
           <tr>
             <td>BANCO</td>
             <td>
-              <span>nome do banco</span>
+              <span><%= nomeBanco %></span>
             </td>
           </tr>
           <tr>
-            <td colspan="2" class="primaryColor"></td>
+            <td colspan="2" class="primaryColor"><img src="https://htmlcolorcodes.com/assets/images/colors/cornflower-blue-color-solid-background-1920x1080.png" class="imgFundo"></td>
           </tr>
           <tr>
             <td>AGÊNCIA</td>
             <td>
-              <span>Agencia</span>
+              <span><%= agenciaBnc %></span>
             </td>
           </tr>
           <tr>
-            <td colspan="2" class="primaryColor"></td>
+            <td colspan="2" class="primaryColor"><img src="https://htmlcolorcodes.com/assets/images/colors/cornflower-blue-color-solid-background-1920x1080.png" class="imgFundo"></td>
           </tr>
           <tr>
             <td>
-              <span>Tipo de conta</span>
+              <span style="text-transform: uppercase;">CONTA <%= tipoConta %></span>
             </td>
             <td>
-              <span>Conta</span>
+              <span><%= contaBnc %></span>
             </td>
           </tr>
           <tr>
-            <td colspan="2" class="primaryColor"></td>
+            <td colspan="2" class="primaryColor"><img src="https://htmlcolorcodes.com/assets/images/colors/cornflower-blue-color-solid-background-1920x1080.png" class="imgFundo"></td>
           </tr>
           <tr>
             <td>CONTA CONTÁBIL</td>
             <td>
-              <span>Conta Contábil</span>
+              <span><%= tipoContabil %></span>
             </td>
           </tr>
           <tr>
             <td>DATA/HORA</td>
             <td>
-              <span>data do doc</span>
+              <span><%= dataHora %></span>
             </td>
           </tr>
           <tr>
-            <td colspan="2" class="primaryColor"></td>
+            <td colspan="2" class="primaryColor"><img src="https://htmlcolorcodes.com/assets/images/colors/cornflower-blue-color-solid-background-1920x1080.png" class="imgFundo"></td>
           </tr>
           <tr>
             <td>ASSINATURA GERENTE</td>
             <td>
-              <span>Gerente</span>
+              <span><%= nomeGerente %></span>
             </td>
           </tr>
           <tr>
-            <td colspan="2" class="primaryColor"></td>
+            <td colspan="2" class="primaryColor"><img src="https://htmlcolorcodes.com/assets/images/colors/cornflower-blue-color-solid-background-1920x1080.png" class="imgFundo"></td>
           </tr>
           <tr>
             <td>ANEXOS:</td>
             <td>
-              <span>tipo de enexo</span>
+              <span style="text-transform: uppercase"><%= tipoAnexo %></span>
             </td>
           </td>
           <tr>
-            <td colspan="2" class="primaryColor"></td>
+            <td colspan="2" class="primaryColor"><img src="https://htmlcolorcodes.com/assets/images/colors/cornflower-blue-color-solid-background-1920x1080.png" class="imgFundo"></td>
           </tr>
           <tr>
             <td style="padding-bottom:80px;">HISTÓRICO:</td>
             <td>
-              <span>histórico</span>
+              <span class="historicotext"><%= historico %></span>
             </td>
           </tr>
         </table>

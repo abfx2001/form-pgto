@@ -1,4 +1,6 @@
 export default function imprimirTela(data) {
+  const btnCarregando = document.getElementById("btn1");
+  btnCarregando.innerHTML = "Baixando...";
   console.log(data);
   fetch("http://localhost:8081/g", {
     method: "POST",
@@ -16,6 +18,9 @@ export default function imprimirTela(data) {
       document.body.appendChild(link);
       link.click();
       URL.revokeObjectURL(link.href);
+    })
+    .then(() => {
+      btnCarregando.innerHTML = "Salvar";
     })
     .catch((error) => {
       console.error("Erro:", error);

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" type="text/css" href="../css/styles.css"> -->
     <link rel="icon" type="image/x-icon" href="./img/sell-icon.ico">
     <title>FORMULÁRIO DE PAGAMENTO</title>
   </head>
@@ -221,7 +220,7 @@
                 <option value="69">69 - RESERVA SEGURANÇA EMERGENCIA</option>
                 <option value="70">70 - PROCESSO CLARO</option>
                 <option value="71">71 - OBRAS / TELHADO</option>
-                <option value="72">772 - PROCESSO CONSTRUTORA</option>
+                <option value="72">72 - PROCESSO CONSTRUTORA</option>
                 <option value="73">73 - FUNDO MINI MERCADO</option>
                 <option value="74">74 - SISTEMA DE INCÊNDIO</option>
                 <option value="75">75 - CNTA. P/ ATUALIZAÇÃO CONVENÇÃO</option>
@@ -246,7 +245,7 @@
           </tr>
           <tr>
             <td>DATA/HORA</td>
-            <td id="data-hora"></td>
+            <td><input id="data-hora" name="dataHora"></input></td>
           </tr>
           <tr>
             <td colspan="2" class="primaryColor"></td>
@@ -289,8 +288,6 @@
                 <option value="DIEGO">Código 41 - DIEGO LOPES</option>
                 <option value="GUSTAVO">Assistente - GUSTAVO NIGATA</option>
               </select>
-              <!--<input type="text" placeholder="Digite o nome do Gerente" name="nomeGerente">
-                Antigo input selecionar nome gerente-->
             </td>
           </tr>
           <tr>
@@ -311,7 +308,7 @@
           <tr>
             <td style="padding-bottom:80px;">HISTÓRICO:</td>
             <td>
-              <textarea id="" cols="46" rows="6"></textarea>
+              <textarea id="" cols="46" rows="6" name="historico" maxlength="180"></textarea>
             </td>
           </tr>
         </table>

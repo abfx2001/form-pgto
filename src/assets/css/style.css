@@ -60,6 +60,10 @@ select:focus {
   text-transform: uppercase;
 }
 
+textarea {
+  text-transform: none !important;
+}
+
 select {
   text-align: center;
 }

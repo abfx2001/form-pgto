@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORMULÁRIO DE PAGAMENTO</title>
     <style type="text/css">
+      .historicotext {
+        text-transform: none !important;
+        word-break: break-all;
+      }
       .container {
       margin-top: 30px;
       margin-left: 140px;
@@ -64,7 +68,7 @@
               <span><%= codCond %></span>
             </td>
             <td>
-              <span>nome do cond.</span>
+              <span><%= nomeCond %></span>
             </td>
           </tr>
           <tr>
@@ -73,7 +77,7 @@
           <tr>
             <td>CNPJ</td>
             <td>
-              <span>CNPJ do cond.</span>
+              <span><%= cnpjCond %></span>
             </td>
           </tr>
           <tr>
@@ -106,7 +110,7 @@
           <tr>
             <td>FAVORECIDO</td>
             <td>
-              <span><%= nomeFavorecido %></span>
+              <span style="text-transform: uppercase"><%= nomeFavorecido %></span>
             </td>
           </tr>
           <tr>
@@ -141,7 +145,7 @@
           </tr>
           <tr>
             <td>
-              <span style="text-transform: uppercase;"><%= tipoConta %></span>
+              <span style="text-transform: uppercase;">CONTA <%= tipoConta %></span>
             </td>
             <td>
               <span><%= contaBnc %></span>
@@ -159,7 +163,7 @@
           <tr>
             <td>DATA/HORA</td>
             <td>
-              <span>data do doc</span>
+              <span><%= dataHora %></span>
             </td>
           </tr>
           <tr>
@@ -177,7 +181,7 @@
           <tr>
             <td>ANEXOS:</td>
             <td>
-              <span><%= tipoAnexo %></span>
+              <span style="text-transform: uppercase"><%= tipoAnexo %></span>
             </td>
           </td>
           <tr>
@@ -186,7 +190,7 @@
           <tr>
             <td style="padding-bottom:80px;">HISTÓRICO:</td>
             <td>
-              <span>histórico</span>
+              <span class="historicotext"><%= historico %></span>
             </td>
           </tr>
         </table>
