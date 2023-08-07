@@ -90,7 +90,7 @@ function selecTipoPag() {
         </td>
         <td id="tipoChavePix">
             <input
-            type="tel"
+            type="text"
             id="inputTel"
             placeholder="Digite o Telefone da Chave Pix"
             maxlength="15"

@@ -10,18 +10,22 @@ Esta sendo utilizado, a principio, para uma questão de testes apenas as funcion
 
 ## Path notes
 
-- adição de verificação no forms;
-- link com API da planilha de controle de condomínios;
-- função de impressão apenas do relatório.
-- máscara de CPF e CNPJ adicionada.
+[x] adição de verificação no forms;
+[x] máscara de CPF e CNPJ adicionada;
+[x] baixar automáticamente o PDF;
+[x] salvar modelos pré-definidos;
+[ ] organizar os modelos;
+[ ] salvar os modelos no server local;
+[ ] acesso via login e sessão;
+[ ] criação de Logs de formulários e aviso de duplicidade.
 
 ## Futuras atualizações
 
-como o projeto vai ter moldado novamente para se compor em um ambiente nuvem, será utilizado recursos como o `NodeJs, NPM, ReactJs` que podem trazer mais funcionalidades e segurança para a aplicação.
+como o projeto vai ter moldado novamente para se compor em um ambiente nuvem, será utilizado recursos como o `NodeJs, NPM` que podem trazer mais funcionalidades e segurança para a aplicação.
 
 ## Version
->
-> V. 2.8.0
+
+> V. 3.1.0
 
 ## Autores
 
