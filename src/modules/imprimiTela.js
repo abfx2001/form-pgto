@@ -13,7 +13,7 @@ export default function imprimirTela(data) {
     .then((blob) => {
       const link = document.createElement("a");
       link.href = URL.createObjectURL(blob);
-      link.download = "nome_do_arquivo.pdf";
+      link.download = "Fomulário-de-Pagamento.pdf";
       link.style.display = "none";
       document.body.appendChild(link);
       link.click();
