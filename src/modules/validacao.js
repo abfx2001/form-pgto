@@ -10,6 +10,7 @@ const agenciaBnc = document.getElementById("td-agenciaBnc");
 const contaBnc = document.getElementById("td-contaBnc");
 const nomeGerente = document.getElementById("td-nomeGerente");
 const formaDePagamento = document.getElementById("formaDePagamento");
+const tamanhoPixCpf = document.getElementById("pixCPF");
 
 export default function validacao(data) {
   let controle = 0;
@@ -33,6 +34,13 @@ export default function validacao(data) {
     cpfCnpjFavorecido.classList.add("errosTd");
     controle = 1;
   }
+  if (
+    data.cpfCnpjFavorecido.length != 14 &&
+    data.cpfCnpjFavorecido.length != 18
+  ) {
+    cpfCnpjFavorecido.classList.add("errosTd");
+    controle = 1;
+  }
 
   if (data.nomeGerente == "") {
     nomeGerente.classList.add("errosTd");
@@ -44,6 +52,14 @@ export default function validacao(data) {
       tipoChavePix.classList.add("errosTd");
       controle = 1;
     }
+    // if (data.pixCPF != "") {
+    //   if (data.pixCPF != 14 && data.pixCPF != 18) {
+    //     const tipoChavePix = document.getElementById("tipoChavePix");
+    //     tipoChavePix.classList.add("errosTd");
+    //     controle = 1;
+    //   }
+    // }
+
     if (data.pixEmail == "") {
       const tipoChavePix = document.getElementById("tipoChavePix");
       tipoChavePix.classList.add("errosTd");

@@ -1,7 +1,7 @@
 export default function imprimirTela(data) {
   const btnCarregando = document.getElementById("btn1");
   btnCarregando.innerHTML = "Baixando...";
-  console.log(data);
+  //console.log(data);
   fetch("http://localhost:8081/g", {
     method: "POST",
     headers: {

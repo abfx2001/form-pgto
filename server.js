@@ -17,6 +17,10 @@ const rawCondsData = JSON.parse(
   fs.readFileSync("./public/database/condominios.json")
 );
 
+const rawContaContabil = JSON.parse(
+  fs.readFileSync("./public/database/contacontabil.json")
+);
+
 app.post("/g", (req, res) => {
   let browser;
   const data = req.body;
@@ -58,7 +62,20 @@ app.post("/g", (req, res) => {
   }
   const condData = buscaCond(data);
 
+  function buscaContabil(data) {
+    let nomeContabil;
+    rawContaContabil.forEach((rawContaData) => {
+      if (rawContaData.codContb == data.tipoContabil) {
+        nomeContabil = rawContaData.nomeContb;
+        return nomeContabil;
+      }
+    });
+    return nomeContabil;
+  }
+  const nomeContaContabil = buscaContabil(data);
+
   (async () => {
+    console.log(buscaContabil(data));
     let html;
     browser = await puppeteer.launch();
     const [page] = await browser.pages();
@@ -79,7 +96,7 @@ app.post("/g", (req, res) => {
         nomeGerente: data.nomeGerente,
         tipoAnexo: data.tipoAnexo,
         tipoConta: data.tipoConta,
-        tipoContabil: data.tipoContabil,
+        tipoContabil: nomeContaContabil,
         valorPag: data.valorPag,
       });
     } else {
@@ -118,7 +135,7 @@ app.post("/g", (req, res) => {
         nomeGerente: data.nomeGerente,
         tipoAnexo: data.tipoAnexo,
         tipoConta: data.tipoConta,
-        tipoContabil: data.tipoContabil,
+        tipoContabil: nomeContaContabil,
         valorPag: data.valorPag,
         valorPix: valorPix,
         tipoChavePix: tipoChavePix,

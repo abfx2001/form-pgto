@@ -117,7 +117,7 @@ export default function loadModelo() {
       document.querySelector("[name='tipoContabil']").value =
         e.data.tipoContabil;
       document.querySelector("[name='tipoAnexo']").value = e.data.tipoAnexo;
-
+      document.querySelector("[name='historico']").value = e.data.historico;
       buscaCond();
     }
   });

@@ -1,0 +1,362 @@
+[
+  {
+    "codContb": 1,
+    "nomeContb": "01 - ORDINÁRIA"
+  },
+  {
+    "codContb": 2,
+    "nomeContb": "02 - FUNDO DE RESERVA"
+  },
+  {
+    "codContb": 3,
+    "nomeContb": "03 - PROVISAO TRABALHISTA"
+  },
+  {
+    "codContb": 4,
+    "nomeContb": "04 - OBRAS"
+  },
+  {
+    "codContb": 5,
+    "nomeContb": "05 - MELHORIAS"
+  },
+  {
+    "codContb": 6,
+    "nomeContb": "06 - BENFEITORIA"
+  },
+  {
+    "codContb": 7,
+    "nomeContb": "07 - SALÃO DE FESTAS"
+  },
+  {
+    "codContb": 8,
+    "nomeContb": "08 - FUNDO FIXO CAIXA"
+  },
+  {
+    "codContb": 9,
+    "nomeContb": "09 - ACORDO/JURIDICO"
+  },
+  {
+    "codContb": 10,
+    "nomeContb": "10 - SEGURANÇA"
+  },
+  {
+    "codContb": 11,
+    "nomeContb": "11 - TV POR ASSINATURA"
+  },
+  {
+    "codContb": 12,
+    "nomeContb": "12 - CONSUMO DE GAS"
+  },
+  {
+    "codContb": 13,
+    "nomeContb": "13 - IPTU"
+  },
+  {
+    "codContb": 14,
+    "nomeContb": "14 - CONSUMO DE AGUA"
+  },
+  {
+    "codContb": 15,
+    "nomeContb": "15 - QUADRO ENERGIA ELETRICA"
+  },
+  {
+    "codContb": 16,
+    "nomeContb": "16 - PEÇAS ELEVADOR"
+  },
+  {
+    "codContb": 17,
+    "nomeContb": "17 - ACADEMIA"
+  },
+  {
+    "codContb": 18,
+    "nomeContb": "18 - A.V.C.B"
+  },
+  {
+    "codContb": 19,
+    "nomeContb": "19 - INSTALAÇÃO CFTV"
+  },
+  {
+    "codContb": 20,
+    "nomeContb": "20 - ALUGUEL VAGA GARAGEM"
+  },
+  {
+    "codContb": 21,
+    "nomeContb": "21 - APLICAÇAO"
+  },
+  {
+    "codContb": 22,
+    "nomeContb": "22 - CHURRASQUEIRA"
+  },
+  {
+    "codContb": 23,
+    "nomeContb": "23 - PROCESSO TRABALHISTA"
+  },
+  {
+    "codContb": 24,
+    "nomeContb": "24 - RESCISÃO FUNCIONARIO"
+  },
+  {
+    "codContb": 25,
+    "nomeContb": "25 - FDO.FIXO CAIXA SINDICO"
+  },
+  {
+    "codContb": 26,
+    "nomeContb": "26 - FDO.FIXO CAIXA ZELADOR"
+  },
+  {
+    "codContb": 27,
+    "nomeContb": "27 - FDO.FIXO CAIXA ATUAL"
+  },
+  {
+    "codContb": 28,
+    "nomeContb": "28 - PINTURA"
+  },
+  {
+    "codContb": 29,
+    "nomeContb": "29 - IMPERMEABILIZAÇÃO FACHADA"
+  },
+  {
+    "codContb": 30,
+    "nomeContb": "30 - GARAGEM"
+  },
+  {
+    "codContb": 31,
+    "nomeContb": "31 - REFORMA"
+  },
+  {
+    "codContb": 33,
+    "nomeContb": "33 - PROCESSO INCORPORADORA"
+  },
+  {
+    "codContb": 34,
+    "nomeContb": "34 - BOLSA BENEFICIENCIA"
+  },
+  {
+    "codContb": 35,
+    "nomeContb": "35 - EVENTOS"
+  },
+  {
+    "codContb": 36,
+    "nomeContb": "36 - LOJA"
+  },
+  {
+    "codContb": 37,
+    "nomeContb": "37 - SALDO ADM ANTERIOR"
+  },
+  {
+    "codContb": 38,
+    "nomeContb": "38 - ELEVADOR"
+  },
+  {
+    "codContb": 39,
+    "nomeContb": "39 - CLAUSURAS"
+  },
+  {
+    "codContb": 40,
+    "nomeContb": "40 - PRUMADA"
+  },
+  {
+    "codContb": 41,
+    "nomeContb": "41 - GERADORES"
+  },
+  {
+    "codContb": 42,
+    "nomeContb": "42 - ASSESSORIA ESPORTIVA/EVENTOS"
+  },
+  {
+    "codContb": 43,
+    "nomeContb": "43 - MANUTENÇÃO"
+  },
+  {
+    "codContb": 44,
+    "nomeContb": "44 - INDIVIDUALIZAÇÃO DE GAS"
+  },
+  {
+    "codContb": 45,
+    "nomeContb": "45 - INADIMPLENCIA"
+  },
+  {
+    "codContb": 46,
+    "nomeContb": "46 - CONTA ESPECIAL GUARITA/PINTURA"
+  },
+  {
+    "codContb": 47,
+    "nomeContb": "47 - AÇÃO TRABALHISTA"
+  },
+  {
+    "codContb": 48,
+    "nomeContb": "48 - REFORMA DA FACHADA"
+  },
+  {
+    "codContb": 49,
+    "nomeContb": "49 - IMPERMEABILIZAÇÃO"
+  },
+  {
+    "codContb": 50,
+    "nomeContb": "50 - IMPLANTAÇÃO"
+  },
+  {
+    "codContb": 51,
+    "nomeContb": "51 - EXTRA CONDOMINIAL"
+  },
+  {
+    "codContb": 52,
+    "nomeContb": "52 - CAIXA JURIDICO"
+  },
+  {
+    "codContb": 53,
+    "nomeContb": "53 - CONTROLE REMOTO/ACESSO"
+  },
+  {
+    "codContb": 54,
+    "nomeContb": "54 - ALUGUEL"
+  },
+  {
+    "codContb": 55,
+    "nomeContb": "55 - SHOWS"
+  },
+  {
+    "codContb": 56,
+    "nomeContb": "56 - PROC. CONSTRUTORA JAU / SABESP"
+  },
+  {
+    "codContb": 57,
+    "nomeContb": "57 - PROV. 13º SALÁRIO"
+  },
+  {
+    "codContb": 58,
+    "nomeContb": "58 - INDIVIDUALIZAÇÃO DE ÁGUA"
+  },
+  {
+    "codContb": 59,
+    "nomeContb": "59 - LAVANDERIA"
+  },
+  {
+    "codContb": 60,
+    "nomeContb": "60 - CONSUMOS"
+  },
+  {
+    "codContb": 61,
+    "nomeContb": "61 - FUNDO DE INVESTIMENTO"
+  },
+  {
+    "codContb": 62,
+    "nomeContb": "62 - SALDO ADM ANTERIOR REGULARIZAR"
+  },
+  {
+    "codContb": 63,
+    "nomeContb": "63 - LOCAÇÃO"
+  },
+  {
+    "codContb": 64,
+    "nomeContb": "64 - CONSUMO DE AGUA/GAS"
+  },
+  {
+    "codContb": 65,
+    "nomeContb": "65 - CESSAO PROV DIREITO AREA COMUM"
+  },
+  {
+    "codContb": 66,
+    "nomeContb": "66 - POÇO ARTESIANO"
+  },
+  {
+    "codContb": 67,
+    "nomeContb": "67 - INDIVIDUALIZAÇÃO - ÁGUA/GÁS"
+  },
+  {
+    "codContb": 68,
+    "nomeContb": "68 - RATEIO EXTRA"
+  },
+  {
+    "codContb": 69,
+    "nomeContb": "69 - RESERVA SEGURANÇA EMERGENCIA"
+  },
+  {
+    "codContb": 70,
+    "nomeContb": "70 - PROCESSO CLARO"
+  },
+  {
+    "codContb": 71,
+    "nomeContb": "71 - OBRAS / TELHADO"
+  },
+  {
+    "codContb": 72,
+    "nomeContb": "72 - PROCESSO CONSTRUTORA"
+  },
+  {
+    "codContb": 73,
+    "nomeContb": "73 - FUNDO MINI MERCADO"
+  },
+  {
+    "codContb": 74,
+    "nomeContb": "74 - SISTEMA DE INCÊNDIO"
+  },
+  {
+    "codContb": 75,
+    "nomeContb": "75 - CNTA. P/ ATUALIZAÇÃO CONVENÇÃO"
+  },
+  {
+    "codContb": 76,
+    "nomeContb": "76 - SALA ADMINISTRATIVA"
+  },
+  {
+    "codContb": 77,
+    "nomeContb": "77 - PROJETO DE SEGURANÇA"
+  },
+  {
+    "codContb": 78,
+    "nomeContb": "78 - ASSOCIAÇÕES/PARQUES"
+  },
+  {
+    "codContb": 79,
+    "nomeContb": "79 - FUNDO EMERGENCIAL"
+  },
+  {
+    "codContb": 80,
+    "nomeContb": "80 - FUNDO JUDICIAL"
+  },
+  {
+    "codContb": 81,
+    "nomeContb": "81 - FINANCIAMENTO"
+  },
+  {
+    "codContb": 82,
+    "nomeContb": "82 - VERBA BLOCOS"
+  },
+  {
+    "codContb": 83,
+    "nomeContb": "83 - AUDITORIA"
+  },
+  {
+    "codContb": 84,
+    "nomeContb": "84 - BRINQUEDOS/LAZER"
+  },
+  {
+    "codContb": 85,
+    "nomeContb": "85 - ENERGIA ELETRICA"
+  },
+  {
+    "codContb": 86,
+    "nomeContb": "86 - CONTA REFORÇO DE CAIXA"
+  },
+  {
+    "codContb": 87,
+    "nomeContb": "87 - DESAPROPRIAÇÃO"
+  },
+  {
+    "codContb": 88,
+    "nomeContb": "88 - BICICLETÁRIO"
+  },
+  {
+    "codContb": 89,
+    "nomeContb": "89 - Impermeabiliz/Jardim/Calçada"
+  },
+  {
+    "codContb": 90,
+    "nomeContb": "90 - SEGUROS"
+  },
+  {
+    "codContb": 91,
+    "nomeContb": "91 - SHOWS"
+  }
+]
