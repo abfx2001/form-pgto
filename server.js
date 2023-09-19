@@ -4,10 +4,12 @@ const path = require("path");
 const ejs = require("ejs");
 const puppeteer = require("puppeteer");
 const fs = require("fs");
+const bodyParser = require("body-parser");
 
 app.use(express.static(path.join(__dirname, "public")));
-app.use(express.urlencoded({ extended: true })); //
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(bodyParser.json());
 
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/public/index.html");
@@ -20,6 +22,15 @@ const rawCondsData = JSON.parse(
 const rawContaContabil = JSON.parse(
   fs.readFileSync("./public/database/contacontabil.json")
 );
+
+app.post("/f", (req, res) => {
+  const dataLog = req.body;
+  for (let i in dataLog) {
+    console.log(dataLog[i].user);
+  }
+
+  res.json({ messagem: "dados recebidos" });
+});
 
 app.post("/g", (req, res) => {
   let browser;

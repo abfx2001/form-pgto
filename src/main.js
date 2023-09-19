@@ -63,6 +63,7 @@ window.addEventListener("keydown", function (event) {
 
 const getLocalStorage = () =>
   JSON.parse(localStorage.getItem("db_predef")) ?? [];
+
 var modelosList = document.getElementById("modelosList");
 modelosList.innerHTML = `<option value=""> ------------------------- </option>`;
 getLocalStorage().map((e) => {
@@ -70,3 +71,21 @@ getLocalStorage().map((e) => {
     <option value="${e.id}">${e.nomeModelo}</option>
     `;
 });
+
+function enviadados() {
+  const objetoLocal = localStorage.getItem("db_predef");
+
+  fetch("http://localhost:8081/f", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: objetoLocal,
+  })
+    .then((response) => response.json())
+    .then((data) => {})
+    .catch((error) => {});
+  return;
+}
+
+window.onload = enviadados;
